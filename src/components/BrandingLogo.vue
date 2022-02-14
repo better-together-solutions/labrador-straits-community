@@ -2,15 +2,15 @@
   <b-navbar-brand href="/">
     <img
       class="logo"
-      src="../assets/better-together-logo.png"
-      alt="Better Together"
+      src="../assets/logo-labrador-straits-community-714x200px.png"
+      alt="Labrador Straits Community"
     >
   </b-navbar-brand>
 </template>
 
 <script>
 export default {
-  name: 'BtBrandingLogo',
+  name: 'BrandingLogo',
 }
 </script>
 

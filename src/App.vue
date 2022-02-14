@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <BtHeader />
+    <BtHeader background-style="light">
+      <template #branding-logo>
+        <BrandingLogo />
+      </template>
+    </BtHeader>
     <BtMainContent />
   </div>
 </template>
@@ -8,10 +12,12 @@
 <script>
 import { mapActions } from 'vuex'
 import { BtHeader, BtMainContent } from '@bettertogether/community-engine-vue'
+import BrandingLogo from './components/BrandingLogo.vue'
 
 export default {
   name: 'BtApp',
   components: {
+    BrandingLogo,
     BtHeader,
     BtMainContent,
   },
@@ -22,82 +28,34 @@ export default {
         external: false,
         label: 'About',
         path: '/about',
-        title: 'About the Better Together Community',
+        title: 'About the Labrador Straits Community',
         sortOrder: 0,
       },
       {
         id: 1,
-        external: false,
-        label: 'Projects',
-        path: '/projects',
-        title: 'Better Together Community Projects',
+        external: true,
+        label: 'Community Voice',
+        url: '//voice.labradorstraits.community/',
+        target: 'voice',
+        title: 'Labrador Straits Community Voice',
         sortOrder: 1,
       },
       {
-        id: 2,
-        external: false,
-        label: 'Partners',
-        path: '/partners',
-        title: 'Better Together Community Partners',
-        sortOrder: 2,
-      },
-      {
-        id: 3,
-        external: false,
-        label: 'Opportunities',
-        path: '/opportunities',
-        title: 'Better Together Community Opportunities',
-        sortOrder: 3,
-      },
-      {
-        id: 8,
-        label: 'Community Platforms',
-        target: 'bt-platforms',
-        title: 'Better Together Community Platforms',
-        sortOrder: 4,
-        path: '/community-platforms',
-        children: [
-          {
-            id: 6,
-            external: true,
-            label: 'Community Hub',
-            target: 'bt-comunity-hub',
-            title: 'Better Together Community Hub',
-            sortOrder: 1,
-            url: 'https://hub.bebettertogether.ca/',
-          },
-          {
-            id: 4,
-            external: true,
-            label: 'Community Marketplace',
-            target: 'bt-marketplace',
-            title: 'Better Together Community Marketplace',
-            sortOrder: 2,
-            url: 'https://marketplace.bebettertogether.ca/',
-          },
-          {
-            id: 7,
-            external: true,
-            label: 'Community Cloud',
-            target: 'bt-community-hub',
-            title: 'Better Together Community Cloud',
-            sortOrder: 3,
-            url: 'https://cloud.bebettertogether.ca/',
-          },
-        ],
-      },
-      {
-        id: 5,
-        external: false,
+        id: 4,
+        external: true,
         label: 'Contact',
-        path: '/contact',
-        title: 'Contact the Better Together Community',
-        sortOrder: 5,
+        url: '//voice.labradorstraits.community/contact',
+        title: 'Contact the Labrador Straits Community',
+        sortOrder: 4,
       },
     ])
+    this.setCustomizationOptions({
+      backgroundColor: '#FFF',
+    })
   },
   methods: {
     ...mapActions('CommunityEngine/Menus', ['setHeaderMenuItems']),
+    ...mapActions('CommunityEngine/Communities', ['setCustomizationOptions']),
   },
 }
 </script>
@@ -143,7 +101,7 @@ export default {
     .navbar-nav {
       a {
         font-weight: bold;
-        color: $default-text-color-bg-dark;
+        color: $default-text-color;
 
         &.router-link-exact-active,
         &:hover {

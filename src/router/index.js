@@ -49,7 +49,7 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Be Better Together',
+      title: 'Labrador Straits Community',
     },
   },
   {
@@ -60,51 +60,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../pages/About.vue'),
     meta: {
-      title: 'About Us | Be Better Together',
-    },
-  },
-  {
-    path: '/projects',
-    name: 'Projects',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "projects" */ '../pages/Projects.vue'),
-    meta: {
-      title: 'Projects | Be Better Together',
-    },
-  },
-  {
-    path: '/projects/community-commerce',
-    name: 'Community Commerce | Projects',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "projects/community-commerce" */ '../pages/ProjectsCommunityCommerce.vue'),
-    meta: {
-      title: 'Community Commerce | Projects | Be Better Together',
-    },
-  },
-  {
-    path: '/projects/community-engine',
-    name: 'Community Engine | Projects',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "projects/community-engine" */ '../pages/ProjectsCommunityEngine.vue'),
-    meta: {
-      title: 'Community Engine | Projects | Be Better Together',
-    },
-  },
-  {
-    path: '/projects/tech-for-good',
-    name: 'Tech For Good | Projects',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "projects/tech-for-good" */ '../pages/TechForGood.vue'),
-    meta: {
-      title: 'Tech For Good | Projects | Be Better Together',
+      title: 'About Us | Labrador Straits Community',
     },
   },
   {
@@ -115,29 +71,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "partners" */ '../pages/Partners.vue'),
     meta: {
-      title: 'Partners | Be Better Together',
-    },
-  },
-  {
-    path: '/opportunities',
-    name: 'Opportunities',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "opportunities" */ '../pages/Opportunities.vue'),
-    meta: {
-      title: 'Opportunities | Be Better Together',
-    },
-  },
-  {
-    path: '/community-platforms',
-    name: 'CommunityPlatforms',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "opportunities" */ '../pages/CommunityPlatforms.vue'),
-    meta: {
-      title: 'Community Platforms | Be Better Together',
+      title: 'Partners | Labrador Straits Community',
     },
   },
   {
@@ -148,7 +82,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "contact" */ '../pages/Contact.vue'),
     meta: {
-      title: 'Contact Us | Be Better Together',
+      title: 'Contact Us | Labrador Straits Community',
     },
   },
   {
@@ -159,7 +93,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "error-404" */ '../pages/Error404.vue'),
     meta: {
-      title: '404 Not Found | Be Better Together',
+      title: '404 Not Found | Labrador Straits Community',
     },
   },
   ...BtRoutes,
