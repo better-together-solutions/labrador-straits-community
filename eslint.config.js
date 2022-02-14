@@ -10,6 +10,7 @@ module.exports = {
           // eslint options (if necessary)
         },
       },
+      'max-len': ["error", { "code": 120 }]
     ],
   },
   // ...
