@@ -32,7 +32,7 @@
                 title="Better Together Solutions"
               >
                 <img
-                  src="assets/images/partners/better-together-solutions-logo-single-line-green-1200x109px.png"
+                  src="assets/images/partners/better-together-solutions-logo.png"
                   alt="Better Together Solutions"
                   class="card-img-top"
                 >
